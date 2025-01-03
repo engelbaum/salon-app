@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon de Beauté - Prise de Rendez-vous</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Salon de Beauté</h1>
+    </header>
+
+    <main>
+        <section id="booking">
+            <h2>Prendre un Rendez-vous</h2>
+            <form id="appointment-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="service">Service :</label>
+                <select id="service" name="service" required>
+                    <option value="coiffure">Coiffure</option>
+                    <option value="manucure">Manucure</option>
+                    <option value="maquillage">Maquillage</option>
+                </select>
+
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Heure :</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+
+        <section id="appointments">
+            <h2>Rendez-vous Confirmés</h2>
+            <ul id="appointment-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
