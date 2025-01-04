@@ -1,12 +1,21 @@
 const API_URL = "http://localhost:8000/api/appointments";
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Le DOM est prêt !");
+  // Ton code ici
+});
+//document.getElementById("my-button").addEventListener("click", function () {
+//alert("Bouton cliqué !");
+//});
 
 // Ajouter un rendez-vous
 document
   .getElementById("appointment-form")
+
   .addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value;
+    //console.log(name);
     const service = document.getElementById("service").value;
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
